@@ -38,10 +38,8 @@ public class Player : MonoBehaviour
     {
         Move();
         if(Input.GetKeyDown(attackKey))
-        {
             if (Time.time - lastAttackTime > attackRate)
                 Attack();
-        }
     }
 
     void Attack ()
